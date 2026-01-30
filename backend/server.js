@@ -10,5 +10,5 @@ app.listen(3000,()=>{
 app.get('/gatos', async(req,res)=>{
     const api = await fetch('https://catfact.ninja/facts?limit=12');
     const fatosjson = await api.json();
-    res.send(fatosjson.data);
+    res.send(fatosjson.data); 
 })
